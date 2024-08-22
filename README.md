@@ -37,9 +37,36 @@ Reaction left join ReactionType table on Category.
 ### Removng Missing Value rows
 
 - remove missing value reactiontype rows: 982 rows deleted. (Note that we only have approximate 25000 rows here, so almost 4% data deleted in this operation. If it is not required by the program, I will do the avearge scoring to replacing the missing value)
-- remove missing value from null values of content_type and Categories, 2415 rows deleted.(this would not appear if left join is appiled)
 
-22158 rows keep as clean data.
+### Data Type Consistency
 
+- removed quotation makrs in Category from Content Table.
+- make all categories lower case.
 
+24573 rows keep as clean data.
+
+## Analysis
+
+### Calculating top 5 performance Category
+
+Using Sumif we can have the following result by sorting total_score:
+
+Category | Total Socre
+---------|------------
+animals	| 74965
+science	| 71168
+healthy eating	| 69339
+technology	| 68738
+food	| 66676
+culture	| 66579
+travel	| 64880
+cooking	| 64756
+soccer	| 57783
+education	| 57436
+fitness	| 55323
+studying	| 54269
+dogs	| 52511
+tennis	| 50339
+veganism	| 49619
+public speaking	| 49264
   
