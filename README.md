@@ -34,7 +34,7 @@ Note that one content can have more than one reactions, so we should use reactio
 Reaction left join Content table on Content ID.
 Reaction left join ReactionType table on Category.
 
-### Removng Missing Value rows
+### Removing Missing Value rows
 
 - remove missing value reactiontype rows: 982 rows deleted. (Note that we only have approximate 25000 rows here, so almost 4% data deleted in this operation. If it is not required by the program, I will do the avearge scoring to replacing the missing value)
 
@@ -69,4 +69,11 @@ dogs	| 52511
 tennis	| 50339
 veganism	| 49619
 public speaking	| 49264
-  
+
+## Share
+
+Provided in the ppt.
+
+## Act
+
+Not required in the program.
